@@ -11,7 +11,8 @@
     <script src="js/shipei.js"></script>
     <script src="js/gundong.js"></script>
 </head>
-<body class="bg_ground">
+<body>
+<div class="bg_ground">
     <div class="top_scroll">
         <div id="scrollDiv">
             <ul class="scroll_ul" >
@@ -33,17 +34,17 @@
             </li>
             <li>
                 <a href="">
-                <img src="images/10.png" alt="">
+                    <img src="images/10.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="">
-                <img src="images/20.png" alt="">
+                    <img src="images/20.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="">
-                <img src="images/50.png" alt="">
+                    <img src="images/50.png" alt="">
                 </a>
             </li>
             <li>
@@ -79,8 +80,11 @@
     <div class="fix_more_btn">
         <a href=""><img src="images/button_more.png" alt=""></a>
     </div>
+</div>
+
 </body>
 <script>
+    document.addEventListener('touchmove', function(e){e.preventDefault()}, false);
     $("#scrollDiv").Scroll({ line: 1, speed: 500, timer: 2000 });
 </script>
 </html>
