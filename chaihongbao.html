@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拼手气，拆红包</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/shipei.js"></script>
+    <script src="js/gundong.js"></script>
+</head>
+<body class="bg_ground bg_ground_1">
+<div  class="scroll">
+    <div class="top_scroll">
+        <div id="scrollDiv">
+            <ul class="scroll_ul" >
+                <li><img src="images/laba.png" alt="">2019-1-16 11:16:53 玩家123654，获得1234.2元红包</li>
+                <li><img src="images/laba.png" alt="">2019-1-16 11:16:53 玩家123654，获得1234.2元红包</li>
+                <li><img src="images/laba.png" alt="">2019-1-16 11:16:53 玩家123654，获得1234.2元红包</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <a  href="http://www.hao123.com"><img class="more_btn1" src="images/xhb_title-more.png" alt=""></a>
+    </div>
+    <div class="money_box">
+        <ul class="list_ul_1">
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="small_pack around_math">
+
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-entry">
+        <ul class="nav-entry-list">
+            <li>
+                <a href="javascript:;" class="nav_bg1" ></a>
+            </li>
+            <li>
+                <a href="javascript:;" class="nav_bg2" ></a>
+            </li>
+            <li>
+                <a href="javascript:;" class="nav_bg3" ></a>
+            </li>
+            <li>
+                <a href="javascript:;" class="nav_bg4" ></a>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <!--拆红包-->
+    <div class="opacity"></div>
+    <div class="windows" >
+        <div class="text">恭喜您获得 <b>2.80</b>元新年红包！</div>
+        <div class="close"><img src="images/button-iKnow.png" alt=""></div>
+    </div>
+</div>
+
+</body>
+<script>
+    document.body.addEventListener('touchmove', function (e) {
+        e.preventDefault(); //阻止默认的处理方式(阻止下拉滑动的效果)
+    }, {passive: false}); //passive 参数不能省略，用来兼容ios和android
+
+    //阻止微信浏览器返回
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        WeixinJSBridge.call('hideOptionMenu');
+    })
+
+    $("#scrollDiv").Scroll({ line: 1, speed: 500, timer: 2000 });
+
+//    点击出现红包金额
+
+
+    $(document).ready(function(){
+        var arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+        $('.list_ul_1 li').click(function(){
+            var that=this;
+            $(this).addClass("shake");
+            $(this).find('a').removeClass("around_math");
+            setTimeout(function(){
+                $('.list_ul_1 li').removeClass("shake");
+                $('.list_ul_1 li').find('.small_pack').css('background-image','url(images/bg_red.png)')
+                $(that).find('.small_pack').css('background-image', 'url(images/bg_yun.png)');
+
+                $(".windows").fadeIn();
+                $(".opacity").fadeIn();
+                $.each(arr,function (i,item) {
+                    $('.list_ul_1 li').find(".around_math").eq(i).html('￥'+item + '元') ;
+                })
+            },1000);
+
+
+        });
+        $(".close").click(function(){
+            $(this).parent().fadeOut();
+            $(".opacity").fadeOut()});
+    });
+</script>
+</html>
