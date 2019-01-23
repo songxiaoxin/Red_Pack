@@ -2,24 +2,20 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,
 em{
     font-style: normal;
 }
-img{
-    pointer-events:none;
-}
 a {
     text-decoration: none;
 }
 table{
     width:100%;
     border: none;
-    text-align:center;/*文本居中*/
-    /*border-collapse:collapse; !*表格的边框合并，如果相邻，则共用一个边框*!*/
-    border-spacing:0; /*设置行与单元格边框的间距。当表格边框独立（即border-collapse:separate;）此属性才起作用*/
+    text-align:center;
+    border-spacing:0;
 }
 
 table td {
     border-right:none;
-    word-break: break-all; /*允许在字内换行,即单词可分*/
-    word-wrap:break-word;/*允许长单词或URL地址换行*/
+    word-break: break-all;
+    word-wrap:break-word;
 }
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
 img { border:none; max-width: 100%;}
@@ -28,13 +24,17 @@ html{height:100%; }
 .bg_ground{
     width: 100%;
     height: 100%;
-    background: url("../images/bg.jpg") no-repeat;
+    background: url("http://hong.aamda.cn/bg.jpg") no-repeat;
     background-size: 100%  95%;
     overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .bg_ground_1{
-    background: url("../images/xhb_bg.png") no-repeat;
+    background: url("http://hong.aamda.cn/xhb_bg.png") no-repeat;
     background-size: 100%  100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .scroll{
     position:absolute;
@@ -48,10 +48,12 @@ html{height:100%; }
 .top_scroll{
     width: 9.333333333333334rem;
     height: 1.7066666666666668rem;
-    background: url("../images/laba-wrap.png") no-repeat;
+    background: url("http://hong.aamda.cn/laba-wrap.png") no-repeat;
     background-size: cover;
     margin: 0.2rem auto;
     overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
 }
 #scrollDiv{
     /*margin-top: 0.1rem;*/
@@ -80,8 +82,10 @@ html{height:100%; }
     display: block;
     animation: swing  3s infinite;
     -moz-animation: swing 3s  infinite;	/* Firefox */
-    -webkit-animation: swing 3s infinite;	/* Safari 和 Chrome */
+    -webkit-animation: swing 3s infinite;	/* Safari 鍜� Chrome */
     -o-animation: swing 3s infinite;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .user_bg{
     width: 3.16rem;
@@ -92,9 +96,11 @@ html{height:100%; }
     color: white;
     display: inline-block;
     float: left;
-    background: url("../images/user.png") no-repeat;
+    background: url("http://hong.aamda.cn/user.png") no-repeat;
     background-size: 100% 100%;
     margin: 0.35rem 0 0.2rem 1.8rem;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .more_btn1{
     width: 4.48rem;
@@ -169,7 +175,7 @@ html{height:100%; }
     /* line-height: .12rem; */
     text-align: center;
 }
-.nav-entry-list a {
+.nav-entry-list div {
     display: block;
     height: 1.4rem;
     /*padding-top: 1.38rem;*/
@@ -178,25 +184,26 @@ html{height:100%; }
     /*position: relative;*/
     /*font-size: 0.36rem;*/
     /*-webkit-tap-highlight-color: transparent;*/
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .nav_bg1{
-    background: url("../images/hb_y.png") no-repeat;
+    background: url("http://hong.aamda.cn/hb_y.png") no-repeat;
     background-size:0.6rem 1.08rem;
 }
 .nav_bg2{
-    background: url("../images/dl_y.png") no-repeat;
+    background: url("http://hong.aamda.cn/dl_y.png") no-repeat;
     background-size:0.76rem 1.0933333333333333rem;
 }
 .nav_bg3{
-    background: url("../images/kf_y.png") no-repeat;
+    background: url("http://hong.aamda.cn/kf_y.png") no-repeat;
     background-size:0.6666666666666666rem 1.12rem;
 }
 .nav_bg4{
-    background: url("../images/chb_y.png") no-repeat;
-    background-size:0.92rem 1.12rem;
+    background: url("http://hong.aamda.cn/chb_y.png") no-repeat;
+    background-size:1.22rem 1.12rem;
 }
-/*拆红包特效*/
 .windows {
     width: 8.586666666666666rem;
     height: 10.146666666666667rem;
@@ -206,15 +213,16 @@ html{height:100%; }
     left: 50%;
     margin-left: -4.29rem;
     border-radius: 0.2rem;
-    background: url("../images/bg_tk01.png") no-repeat;
+    background: url("http://hong.aamda.cn/bg_tk01.png") no-repeat;
     background-size: 100% 100%;
     display: none;
     z-index: 11;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .text {
     text-align: center;
     font-size: 0.35rem;
-    font-family: "微软雅黑";
     vertical-align: middle;
     color: #FB2223;
     padding-top: 6rem;
@@ -242,7 +250,6 @@ html{height:100%; }
     height: 100%;
     display: none;
 }
-/*动画效果*/
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both
@@ -251,26 +258,28 @@ html{height:100%; }
 .list_ul  li {
     animation: pulse  1.5s infinite;
     -moz-animation: pulse 1.5s  infinite;	/* Firefox */
-    -webkit-animation: pulse 1.5s infinite;	/* Safari 和 Chrome */
+    -webkit-animation: pulse 1.5s infinite;	/* Safari 鍜� Chrome */
     -o-animation: pulse 1.5s infinite;
 }
 
 .list_ul_1  li {
     animation: pulse  1.5s infinite;
     -moz-animation: pulse 1.5s  infinite;	/* Firefox */
-    -webkit-animation: pulse 1.5s infinite;	/* Safari 和 Chrome */
+    -webkit-animation: pulse 1.5s infinite;	/* Safari 鍜� Chrome */
     -o-animation: pulse 1.5s infinite;
 }
 .list_ul_1 li .small_pack{
     width: 1.24rem;
     height: 1.52rem;
     display: block;
-    background: url("../images/xhb_hb_small.png") no-repeat;
+    background: url("http://hong.aamda.cn/xhb_hb_small.png") no-repeat;
     background-size: 100% 100%;
     line-height: 1.52rem;
     color: #FFCE1E;
     text-align: center;
     font-size: 0.3rem;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .list_ul_1 .shake{
     animation:shake .2s infinite linear;
@@ -478,7 +487,6 @@ html{height:100%; }
     height: 1.4533333333333334rem;
 }
 
-/*代理页弹框功能*/
 .windows_yjjl ,.windows_txjl,.windows_yjtx,.windows_dlsm{
     width: 8.8rem;
     height: 13.066666666666666rem;
@@ -488,7 +496,7 @@ html{height:100%; }
     left: 50%;
     margin-left: -4.4rem;
     border-radius: 0.2rem;
-    display: none;
+    visibility: hidden;
     z-index: 11;
 }
 .dl_yjjl_title{
@@ -497,37 +505,43 @@ html{height:100%; }
     position: absolute;
     left: 2.6rem;
     top: -0.1rem;
-    background: url(../images/dl_yjjl_title.png) no-repeat;
+    background: url("http://hong.aamda.cn/dl_yjjl_title.png") no-repeat;
     background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .dl_yxtx_title{
-    background: url("../images/dl_txjl_title.png") no-repeat;
+    background: url("http://hong.aamda.cn/dl_txjl_title.png") no-repeat;
     background-size: 100% 100%;
 }
 .dl_yjtx_title{
-    background: url("../images/dl_yjtx_title.png") no-repeat;
+    background: url("http://hong.aamda.cn/dl_yjtx_title.png") no-repeat;
     background-size: 100% 100%;
 }
 .dl_dlsm_title{
-    background: url("../images/dl_dlsm_title.png") no-repeat;
+    background: url("http://hong.aamda.cn/dl_dlsm_title.png") no-repeat;
     background-size: 100% 100%;
 }
 .dl_yjjl_top{
     width: 8.813333333333333rem;
     height: 1.7733333333333334rem;
     margin: 0 auto;
-    background: url("../images/dl_yjjl_top.png") no-repeat;
+    background: url("http://hong.aamda.cn/dl_yjjl_top.png") no-repeat;
     background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .dl_yjjl_bottom{
     width: 8.813333333333333rem;
     height: 1.7733333333333334rem;
     margin: 0 auto;
-    background: url("../images/dl_yjjl_bottom.png") no-repeat;
+    background: url("http://hong.aamda.cn/dl_yjjl_bottom.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     bottom: 0.3rem;
+    -webkit-user-select: none;
+    user-select: none;
 ;
 }
 .dl_content{
@@ -547,17 +561,35 @@ html{height:100%; }
     color:#95694C;
     font-size: 0.28rem;
 }
-.dl_dlsm_top img ,.dl_dlsm_bottom  img{
+.dl_dlsm_top{
     width: 6.533333333333333rem;
     height:1.0666666666666667rem;
     display: block;
     margin: 0 auto;
+    background: url("http://hong.aamda.cn/title_yjbl.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
-.dl_dlsm_center img  {
+.dl_dlsm_bottom{
+    width: 6.533333333333333rem;
+    height:1.0666666666666667rem;
+    display: block;
+    margin: 0 auto;
+    background: url("http://hong.aamda.cn/title_wdxj.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.dl_dlsm_center {
     width: 6.533333333333333rem;
     height:4.2rem;
     display: block;
     margin: 0 auto;
+    background: url("http://hong.aamda.cn/body_yjbl.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .dlsm_table{
     width: 6.533333333333333rem;
@@ -588,15 +620,19 @@ html{height:100%; }
     width: 6.88rem;
     height: 3.3466666666666667rem;
     margin:  0.2rem auto;
-}
-.yjtx_wxts img{
-    width: 100%;
-    height: 100%;
+    background: url("http://hong.aamda.cn/yjtx_wxts.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .button_yjtx_qr{
     width: 2.1866666666666665rem;
     height: 0.76rem;
     margin:  0 auto;
+    background: url("http://hong.aamda.cn/button_yjtx_qr.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .button_yjtx_qr img{
     width: 100%;
@@ -608,6 +644,10 @@ html{height:100%; }
     position: absolute;
     top: -1rem;
     right: 0.7rem;
+    background: url("http://hong.aamda.cn/close.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .close_x img{
     width: 100%;
@@ -634,6 +674,7 @@ html{height:100%; }
 .table_body{
     height: 9rem;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .table_body table tr td{
     height: 0.6rem;
@@ -655,23 +696,26 @@ html{height:100%; }
 .table_body_1 table tr td:nth-child(2){
     width: 50%;
 }
-/*我的工资部分*/
 .windows_wdgz{
     position: fixed;
     width: 100%;
     height: 100%;
-    background: url("../images/wdgz_bj.jpg") no-repeat;
+    background: url("http://hong.aamda.cn/wdgz_bj.jpg") no-repeat;
     background-size: 100% 100%;
     z-index: 100;
-    display: none;
+  visibility: hidden;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .wdgz_head{
     width: 10rem;
     height:6.8933333333333335rem;
     display: block;
-    background: url("../images/wdgz_head-2.png") no-repeat;
+    background: url("http://hong.aamda.cn/wdgz_head-2.png") no-repeat;
     background-size: 100% 100%;
     margin: 0 auto;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .wdgz_div{
     overflow: hidden;
@@ -692,47 +736,185 @@ html{height:100%; }
     color: red;
     font-size: 0.3rem;
 }
-.lqgz_btn img{
+.lqgz_btn{
     width: 3.16rem;
     height: 1.12rem;
     display: block;
     margin: 0 auto;
+    background: url("http://hong.aamda.cn/wdgz_lqgz.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
-.gzsm_title img{
+.gzsm_title{
     width: 7.44rem;
     height: 1.4133333333333333rem;
     display: block;
     margin: 0 auto;
+    background: url("http://hong.aamda.cn/gzsm_title.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
-.gzsm_body img{
+.gzsm_body{
     width: 8.706666666666667rem;
     height: 6.8rem;
     display: block;
     margin: 0 auto;
+    background: url("http://hong.aamda.cn/gzsm_body.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-.close_y img{
+.close_y{
     width: 0.9466666666666667rem;
     height: 0.96rem;
     display: block;
     position: fixed;
     top: 0.2rem;
     left: 0.2rem;
+    background: url("http://hong.aamda.cn/c_3.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-.windows_wdgz {
+
+.windows_scewm{
     position: fixed;
     width: 100%;
     height: 100%;
-    background: url(../images/wdgz_bj.jpg) no-repeat;
-    background-size: 100% 100%;
     z-index: 100;
-    display: none;
+    visibility: hidden;
 }
+.windows_pop-up{
+    width: 8.8rem;
+    height: 6.066667rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -3.033rem;
+    left: 50%;
+    margin-left: -4.4rem;
+    border-radius: 0.2rem;
+    display: none;
+    z-index: 11;
+}
+.tk_vip{
+    width: 7.653333333333333rem;
+    height:5.026666666666666rem;
+    background: url("http://hong.aamda.cn/tk_vip.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.kefu_erweima{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    position: absolute;
+    top: 1.8rem;
+    left: 1.2rem;
+}
+.tuiguang_img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.windows_chb{
+    width: 7.6rem;
+    height:9.786666666666667rem;
+    background: url("http://hong.aamda.cn/chb_bg.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.89rem;
+    left: 50%;
+    margin-left: -3.8rem;
+    border-radius: 0.2rem;
+    display: none;
+    z-index: 11;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.table_chb_small{
+    height: 7rem;
+    padding:2.3rem 0.2rem 0 ;
+    overflow-y: scroll;
 
+}
+.table_chb_small table tr{
+    font-size: 0.3rem;
+    color: white;
+}
+.table_chb_small table tr td:first-child{
+    width: 50%;
+}
+.table_chb_small table tr td:nth-child(2){
+    width: 20%;
+}
+.table_chb_small table tr td:nth-child(3){
+    width: 30%;
+}
+.chb_small{
+    width: 1.5466666666666666rem;
+    height:0.6533333333333333rem;
+    display: inline-block;
+    background: url("http://hong.aamda.cn/chb_button.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.1rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.list_ul li div{
+    width: 2.24rem;
+    height: 3.04rem;
+    display: inline-block;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.list_ul_dl li div{
+    width: 2.68rem;
+    height: 1.6533333333333333rem;
+    display: inline-block;
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    user-select: none;
 
+}
+#tc-wrapper1,#tc-wrapper2 {
+    height: 9rem;
+    min-height: 9rem;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#tc-wrapper1 ul li, #tc-wrapper2 ul li{
+    height:0.6rem;
 
-
+    font-size: 0.28rem;
+}
+#tc-wrapper1 ul li span, #tc-wrapper2 ul li span{
+    text-align: center;
+    line-height: 0.6rem;
+    display: inline-block;
+}
+#tc-wrapper1 ul li span:nth-child(1),   #tc-wrapper2 ul li span:nth-child(1){
+    display: inline-block;
+    width: 50%;
+}
+#tc-wrapper1 ul li span:nth-child(2){
+    display: inline-block;
+    width: 20%;
+}
+#tc-wrapper2 ul li span:nth-child(2){
+    width: 50%;
+}
+#tc-wrapper1 ul li span:nth-child(3){
+    display: inline-block;
+    width: 27%;
+}
 
 
 

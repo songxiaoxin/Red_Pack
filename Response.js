@@ -130,7 +130,31 @@ function withdrawRecord (options) {
         'results':[
             {'amount':20,'created':'2019-01-02 19:20'},
             {'amount':22,'created':'2019-01-02 19:20'},
-            {'amount':122,'created':'2019-01-02 19:20'}
+            {'amount':122,'created':'2019-01-02 19:20'},
+            {'amount':20,'created':'2019-01-02 19:20'},
+            {'amount':22,'created':'2019-01-02 19:20'},
+            {'amount':122,'created':'2019-01-02 19:20'},
+            {'amount':20,'created':'2019-01-02 19:20'},
+            {'amount':22,'created':'2019-01-02 19:20'},
+            {'amount':122,'created':'2019-01-02 19:20'},
+            {'amount':20,'created':'2019-01-02 19:20'},
+            {'amount':22,'created':'2019-01-02 19:20'},
+            {'amount':122,'created':'2019-01-02 19:20'},
+            {'amount':20,'created':'2019-01-02 19:20'},
+            {'amount':22,'created':'2019-01-02 19:20'},
+            {'amount':122,'created':'2019-01-02 19:20'},
+            {'amount':20,'created':'2019-01-02 19:20'},
+            {'amount':22,'created':'2019-01-02 19:20'},
+            {'amount':122,'created':'2019-01-02 19:20'},
+            {'amount':20,'created':'2019-01-02 19:20'},
+            {'amount':22,'created':'2019-01-02 19:20'},
+            {'amount':122,'created':'2019-01-02 19:20'},
+            {'amount':20,'created':'2019-01-02 19:20'},
+            {'amount':22,'created':'2019-01-02 19:20'},
+            {'amount':122,'created':'2019-01-02 19:20'},
+            {'amount':20,'created':'2019-01-02 19:20'},
+            {'amount':22,'created':'2019-01-02 19:20'},
+            {'amount':122,'created':'2019-01-02 19:20'},
         ]
     }
     options.success(data);
@@ -162,9 +186,30 @@ function salaryRecord (options) {
     var token = sessionStorage.getItem('token');
     var data = {
         'results': [
-            {'amount':20,'created':'2019-01-02 19:20','remark':'xxxxxx'},
-            {'amount':25,'created':'2019-01-02 19:20','remark':'xxxxxx'},
-            {'amount':29,'created':'2019-01-02 19:20','remark':'xxxxxx'}
+            {'amount':2220,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2225,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2229,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2220,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2225,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2229,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2220,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2225,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2229,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2220,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2225,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2229,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2220,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2225,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2229,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2220,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2225,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2229,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2220,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2225,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2229,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2220,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2225,'created':'2019-01-02 19:20','remark':'xxxxxx'},
+            {'amount':2229,'created':'2019-01-02 19:20','remark':'xxxxxx'},
         ]
     }
     options.success(data);
